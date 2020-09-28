@@ -1,6 +1,7 @@
 /* Font used in the headlines: font-family: 'Montserrat', sans-serif; */
 /* Font used in other cases: font-family: 'Roboto Slab', serif; */
 
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,6 +11,12 @@
 body{
     height: 300vh;
     background-color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+    --pistachio-green: #7CC576;
+    --light-gray:#777777;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Navigation */
@@ -33,7 +40,7 @@ nav .circle{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #7CC576;
+    background-color: var(--pistachio-green);
 }
 
 nav .logo{
@@ -66,13 +73,13 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #777777;
+    color: var(--light-gray);
 }
 
 nav i.fa-bars{
     display:none;
     float:right;
-    color: #777777;
+    color: var(--light-gray);
     font-size: 24px;
 }
 nav i.fa::after{
@@ -102,8 +109,9 @@ nav ul li.extended{
 header{
     height: 80vh;
     width: 100%;
-    position: absolute;
-    top: 108px;
+    /* position: absolute;
+    top: 108px; */
+    padding-top:108px;
     background-image: url("img/Transparency\ Layer.png"), url("img/Background-2.png");
     background-size: cover;
     background-position: center;
@@ -130,34 +138,114 @@ header p{
     font-size: 20px;
 }
 
-header button{
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+
+.btn{
     width: 200px;
     height: 60px;
     outline: none;
-    border: 2px solid #7CC576;
+    border: 2px solid var(--pistachio-green);
     border-radius: 30px;
     text-align: center;
     background-color: transparent;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    color:#7CC576;
-    
+    color: var(--pistachio-green);
 }
 
 
-button:hover{
+.btn:hover{
     cursor: pointer;
-    border: 2px solid #7CC576;
+    border: 2px solid var(--pistachio-green);
     color: white;
-    background-color: #7CC576;
+    background-color:var(--pistachio-green);
     /* transform: scale(1.05); */
 }
+header .btn{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
+/* Info section */
+
+.info{
+    height: 65vh;
+    width: 100%;
+}
+
+.info .left-container{
+    height: 100%;
+    width:25%;
+    float:left;
+    background-color: #E9E9E9;
+    position: relative;
+}
+.info .left-container img{
+    height: 75%;
+    width: auto;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.info .right-container{
+    width: 75%;
+    height: 100%;
+    float: right;
+    position: relative;
+    background-image: url("img/Transparency\ Layer.png"), url("img/Background-1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.info .right-container::after{
+    clear:both;
+}
+
+.info h2{
+    margin-top: 55px;
+    margin-left: 100px;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.info h2 span{
+    color: var(--pistachio-green);
+}
+
+.info p{
+    width: 55%;
+    margin:20px 0;
+    margin-left: 100px;
+    color: white;
+    font-weight: 200;
+
+}
+
+.info ul{
+    margin-left: 100px;
+    list-style: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+.info ul li{
+    margin-bottom: 7px;
+}
+.info ul i{
+    font-size: 30px;
+    
+    margin-right: 20px;
+}
+
+.info button{
+    margin-top: 25px;
+    margin-left: 100px;
+}
 /* Media Queries */
 @media (max-width: 1200px) { 
 
@@ -170,9 +258,37 @@ button:hover{
     nav ul{
         display:none;
     }
+
+    .info h2{
+        font-size: 35px;
+    }
+    .info button{
+        width: 180px;
+        height: 55px;
+    }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .info h2{
+        margin-left: 60px;
+        margin-top: 45px;
+        font-size: 30px;
+    }
+    .info p, .info ul{
+        margin-left: 60px;
+        font-size: 15px;
+    }
+    .info ul i{
+        font-size: 25px;
+    }
+    .info button{
+        margin-left: 60px;
+        margin-top: 15px;
+        width: 160px;
+        height: 45px;
+    }
+
+}
 
 @media (max-width: 576px) {
     header h1{
