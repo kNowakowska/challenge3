@@ -330,6 +330,16 @@ header .btn{
     background-color: white;
     color: var(--pistachio-green)
 }
+
+/*Sponsor section */
+.sponsor{
+    padding: 40px;
+    text-align: center;
+}
+
+.sponsor img{
+    margin: 10px 25px;
+}
 /* Media Queries */
 @media (max-width: 1200px) { 
 
