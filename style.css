@@ -10,12 +10,12 @@
 
 body{
     height: 300vh;
-    background-color: whitesmoke;
+    background-color: white;
     font-family: 'Roboto Slab', serif;
     --pistachio-green: #7CC576;
     --light-gray:#777777;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, button{
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -223,7 +223,7 @@ header .btn{
 /* Info section */
 
 .info{
-    height: auto;
+    height: 75vh;
     width: 100%;
 }
 
@@ -297,6 +297,38 @@ header .btn{
 .info button{
     margin-top: 25px;
     margin-left: 100px;
+}
+
+/* Contact section */
+.contact{
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    background-color: var(--pistachio-green);
+    color: white;
+}
+.contact h2{
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.contact button{
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--pistachio-green);
+    color: white;
+    text-transform: uppercase;
+}
+
+.contact button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--pistachio-green)
 }
 /* Media Queries */
 @media (max-width: 1200px) { 
@@ -380,7 +412,7 @@ header .btn{
     .services h2{
         font-size: 30px;
     }
-    
+
     .services .tile{
         width: 100%;
         padding: 10px;
