@@ -299,6 +299,107 @@ header .btn{
     margin-left: 100px;
 }
 
+/* Last Project Section */
+
+.last-project{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.last-project h2{
+    margin: 80px auto 10px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.last-project p{
+    margin: 30px 0;
+    font-size: 20px;
+    color: var(--light-gray);
+}
+.last-project .container{
+    float:left;
+    width: 50%;
+    height: 70%;
+    padding-left: 150px;
+    text-align: left;
+}
+.last-project h3{
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.last-project .container p{
+    font-size: 16px;
+}
+.last-project ul{
+    list-style: none;
+}
+.last-project ul div{
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+.last-project ul img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}  
+.last-project ul li{
+    margin: 10px 0;
+    font-size: 16px;
+    color: var(--light-gray);
+}
+.last-project ul span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.last-project ul h4{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.last-project button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--pistachio-green);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.last-project .bg-container{
+    float: right;
+    width: 45%;
+    height:80%;
+    overflow: hidden;
+
+}
+.last-project .bg-container::after{
+    clear: both;
+}
+
 /* Contact section */
 .contact{
     width: 100%;
