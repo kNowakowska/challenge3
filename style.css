@@ -326,7 +326,7 @@ header .btn{
     float:left;
     width: 50%;
     height: 70%;
-    padding-left: 150px;
+    padding-left: 100px;
     text-align: left;
 }
 .last-project h3{
@@ -345,8 +345,8 @@ header .btn{
 .last-project ul div{
     display: inline-block;
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     padding: 5px;
     margin-right: 10px;
     border: 3px solid black;
@@ -410,6 +410,9 @@ header .btn{
     overflow: hidden;
 
 }
+.last-project .bg-container img{
+    width: 120%;
+}
 .last-project .bg-container::after{
     clear: both;
 }
@@ -457,7 +460,28 @@ header .btn{
 }
 /* Media Queries */
 @media (max-width: 1200px) { 
-
+    .last-project .container{
+        width: 60%;
+    }
+    .last-project .bg-container{
+        width:40%;
+    }
+    .last-project ul div{
+        width: 50px;
+        height: 50px;
+        padding: 3px;
+    }
+    .last-project ul img{
+        width: 25px;
+        height:25px;
+    }
+    
+    .last-project ul li{
+        font-size: 14px;
+    }
+    .last-project ul h4{
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -497,6 +521,32 @@ header .btn{
         font-size: 13px;
         line-height: 150%;
     }
+    .last-project h2{
+        margin-top: 25px;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    .last-project p{
+        margin: 15px 0;
+        font-size: 16px;
+    }
+    .last-project h3{
+        margin: 10px 0;
+    }
+    .last-project .container p{
+        font-size: 14px;
+    }
+    .last-project ul li{
+        text-align: center;
+    }
+    .last-project ul span{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .last-project .bg-container img{
+        width: 200%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -518,7 +568,25 @@ header .btn{
         width: 160px;
         height: 45px;
     }
-
+    .last-project h2{
+        margin-top: 15px;
+        font-size: 30px;
+    }
+    .last-project p{
+        margin: 10px 0;
+        font-size: 15px;
+    }
+    .last-project .container{
+        width: 100%;
+        padding: 0 50px;
+    }
+    .last-project .bg-container{
+        display: none;
+    }
+    .last-project button:hover{
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 576px) {
