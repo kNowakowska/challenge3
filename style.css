@@ -380,6 +380,11 @@ header .btn{
 }
 
 .last-project button{
+    position: relative;
+    top:0;
+    left:0;
+    padding: 15px 10px;
+    border-radius: 30px;
     border: none;
     outline: none;
     background-color: transparent;
@@ -387,6 +392,15 @@ header .btn{
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
+    transition-duration: 300ms;
+}
+.last-project button:hover{
+    left:3%;
+    padding: 15px 10px;
+    border-radius: 30px;
+    background-color: var(--pistachio-green);
+    color: white;
+    cursor: pointer;
 }
 
 .last-project .bg-container{
