@@ -418,11 +418,11 @@ header .btn{
 }
 /* Culture Section */
 .culture{
-    /* height: 70vh; */
-    padding-top: 80px;
-    width: 100%;
-    background-color: whitesmoke;
     position: relative;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background-color: whitesmoke;
 }
 .culture h2{
     margin: 0 auto 10px;
@@ -438,30 +438,29 @@ header .btn{
     text-align: center;
 }
 .culture .tile{
-    width: 33%;
     display: inline-block;
-       padding: 5%;
+    width: 31%;
+    padding: 5%;
     text-align: center;
 }
 .culture .tile h3{
+    margin-top: 30px;;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
-    margin-top: 30px;;
 }
 .culture .tile p{
     font-size: 14px;
     color: var(--light-gray);
-
 }
 .culture .tile div{
+    display: inline-block;
+    position: relative;
     width: 80px;
     height: 80px;
-    display: inline-block;
     border: 5px solid var(--light-gray);
     border-radius: 50%;
-    position: relative;
 }
 .culture .tile img{
     width: 45px;
@@ -470,22 +469,20 @@ header .btn{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
-    
 }
 .culture .line{
     position: absolute;
     top: 55%;
     left: 33%;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
     width: 20%;
     border-bottom: 4px solid var(--light-gray);
     border-radius: 4px;
     z-index: 100;
 }
 .culture .line:nth-of-type(2){
-    
     left: 66%;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
 }
 
 /* Contact section */
@@ -529,6 +526,7 @@ header .btn{
 .sponsor img{
     margin: 10px 25px;
 }
+
 /* Media Queries */
 @media (max-width: 1200px) { 
     .last-project .container{
@@ -552,6 +550,9 @@ header .btn{
     }
     .last-project ul h4{
         font-size: 16px;
+    }
+    .culture .line{
+        width: 15%;
     }
 }
 
@@ -618,6 +619,30 @@ header .btn{
     .last-project .bg-container img{
         width: 200%;
     }
+    .culture h2{
+        font-size: 30px;
+    }
+    .culture p{
+        font-size: 16px;
+    }
+    .culture{
+        padding-top: 50px;
+    }
+    .culture .tile h3{
+        margin: 10px 0;
+    }
+    .culture .tile img{
+        width: 25px;
+        height: 25px
+    }
+    .culture .tile div{
+        height: 50px;
+        width: 50px;
+    }
+    .culture .line{
+        width: 10%;
+        top: 40%
+    }
 }
 
 @media (max-width: 768px) {
@@ -657,6 +682,13 @@ header .btn{
     .last-project button:hover{
         left: 50%;
         transform: translateX(-50%);
+    }
+    .culture .line{
+        display: none;
+    }
+    .culture .tile{
+        width: 100%;
+        padding: 15px 80px;
     }
 }
 
