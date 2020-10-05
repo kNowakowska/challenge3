@@ -416,6 +416,77 @@ header .btn{
 .last-project .bg-container::after{
     clear: both;
 }
+/* Culture Section */
+.culture{
+    /* height: 70vh; */
+    padding-top: 80px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: relative;
+}
+.culture h2{
+    margin: 0 auto 10px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.culture p{
+    margin: 15px auto;
+    font-size: 20px;
+    color: var(--light-gray);
+    text-align: center;
+}
+.culture .tile{
+    width: 33%;
+    display: inline-block;
+       padding: 5%;
+    text-align: center;
+}
+.culture .tile h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;;
+}
+.culture .tile p{
+    font-size: 14px;
+    color: var(--light-gray);
+
+}
+.culture .tile div{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border: 5px solid var(--light-gray);
+    border-radius: 50%;
+    position: relative;
+}
+.culture .tile img{
+    width: 45px;
+    height:45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    
+}
+.culture .line{
+    position: absolute;
+    top: 55%;
+    left: 33%;
+    transform: translateX(-50%);
+    width: 20%;
+    border-bottom: 4px solid var(--light-gray);
+    border-radius: 4px;
+    z-index: 100;
+}
+.culture .line:nth-of-type(2){
+    
+    left: 66%;
+    transform: translateX(-50%);
+}
 
 /* Contact section */
 .contact{
