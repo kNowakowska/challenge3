@@ -563,6 +563,75 @@ footer div i{
     color: white;
 }
 
+/* Section recommendations */
+
+.recommendations{
+    min-height: 90vh;
+    padding: 50px 40px;
+    background-color: white;
+    text-align: center;
+}
+.recommendations h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.recommendations p{
+    margin: 15px auto;
+    font-size: 20px;
+    color: var(--light-gray);
+    text-align: center;
+}
+.recommendations .client{
+    width: 80%;
+    height: 250px;
+    margin: 15px auto;
+    text-align: center;
+}
+.recommendations .client .photo{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #F9F9F9;
+}
+.recommendations .client .comment{
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 60%;
+    padding: 30px;
+    margin-right: 40px;
+    vertical-align: middle;
+    background-color: #F9F9F9;
+}
+.recommendations .comment blockquote{
+    color: var(--light-gray);
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+.recommendations .comment cite{
+    color: var(--pistachio-green);
+    font-size: 18px;
+    font-style: normal;
+}
+.recommendations .comment .triangle{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: #F9F9F9;
+}
+.recommendations .comment:nth-of-type(odd) .triangle{
+    left: 100%;
+}
+.recommendations .comment:nth-of-type(even) .triangle{
+    left: 0%;
+}
+
 /* Media Queries */
 @media (max-width: 1200px) { 
     .last-project .container{
