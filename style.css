@@ -600,6 +600,74 @@ header .btn{
     margin: 10px 25px;
 }
 
+/*See more section */
+.see-more{
+    width: 100%;
+    height: auto;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.see-more .container{
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    margin: 20px;
+    text-align: left;
+}
+.see-more h3{
+    margin: 18px 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.see-more .container i{
+    position: absolute;
+    left: 0px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.see-more .container address{
+    margin: 5px auto;
+    padding-left: 27px;
+    font-style: normal;
+}
+.see-more .container i.fa-mobile-alt{
+    font-size: 25px;
+}
+
+.see-more .container ul{
+    padding-left: 30px;
+    list-style: none;
+}
+.see-more .container ul li{
+    position: relative;
+}
+.see-more .container ul li a{
+    line-height: 240%;
+    font-family: inherit;
+    font-style: normal;
+    text-decoration-line: none;
+    color: white;
+}
+    
+.see-more .container ul li i{
+    top: 10px;
+    left: -30px;
+}
+.see-more .container .tweet{
+    margin-bottom: 25px;
+    padding-left: 30px;
+}
+.see-more .container .tweet small{
+    display: block;
+    margin-top: 10px;
+}
+
+
 /* Footer */
 footer{
     position: relative;
