@@ -484,6 +484,79 @@ header .btn{
     left: 66%;
     transform: translateX(-60%);
 }
+/* Section recommendations */
+
+.recommendations{
+    min-height: 90vh;
+    padding: 50px 40px;
+    background-color: white;
+    text-align: center;
+}
+.recommendations h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.recommendations p{
+    margin: 15px auto;
+    font-size: 20px;
+    color: var(--light-gray);
+    text-align: center;
+}
+.recommendations .client{
+    width: 80%;
+    height: 250px;
+    margin: 15px auto;
+    text-align: center;
+}
+.recommendations .client .photo{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #F9F9F9;
+}
+.recommendations .photo.first{
+    display: none;
+}
+.recommendations .client .comment{
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 60%;
+    padding: 30px;
+    margin-right: 40px;
+    vertical-align: middle;
+    background-color: #F9F9F9;
+}
+.recommendations .comment blockquote{
+    color: var(--light-gray);
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+.recommendations .comment cite{
+    color: var(--pistachio-green);
+    font-size: 18px;
+    font-style: normal;
+}
+.recommendations .comment .triangle{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: #F9F9F9;
+}
+.recommendations .comment:nth-of-type(odd) .triangle{
+    left: 100%;
+}
+.recommendations .comment:nth-of-type(even) .triangle{
+    left: 0%;
+}
+
 
 /* Contact section */
 .contact{
@@ -563,74 +636,6 @@ footer div i{
     color: white;
 }
 
-/* Section recommendations */
-
-.recommendations{
-    min-height: 90vh;
-    padding: 50px 40px;
-    background-color: white;
-    text-align: center;
-}
-.recommendations h2{
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.recommendations p{
-    margin: 15px auto;
-    font-size: 20px;
-    color: var(--light-gray);
-    text-align: center;
-}
-.recommendations .client{
-    width: 80%;
-    height: 250px;
-    margin: 15px auto;
-    text-align: center;
-}
-.recommendations .client .photo{
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    margin-right: 40px;
-    border-radius: 50%;
-    vertical-align: middle;
-    background-color: #F9F9F9;
-}
-.recommendations .client .comment{
-    display: inline-block;
-    position: relative;
-    height: auto;
-    width: 60%;
-    padding: 30px;
-    margin-right: 40px;
-    vertical-align: middle;
-    background-color: #F9F9F9;
-}
-.recommendations .comment blockquote{
-    color: var(--light-gray);
-    letter-spacing: 1px;
-    font-size: 22px;
-}
-.recommendations .comment cite{
-    color: var(--pistachio-green);
-    font-size: 18px;
-    font-style: normal;
-}
-.recommendations .comment .triangle{
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background-color: #F9F9F9;
-}
-.recommendations .comment:nth-of-type(odd) .triangle{
-    left: 100%;
-}
-.recommendations .comment:nth-of-type(even) .triangle{
-    left: 0%;
-}
 
 /* Media Queries */
 @media (max-width: 1200px) { 
@@ -760,6 +765,34 @@ footer div i{
         width: 10%;
         top: 40%
     }
+    .recommendations h2{
+        font-size: 30px;
+    }
+    .recommendations p{
+        font-size: 16px;
+    }
+    .recommendations .client{
+        width: 90%;
+        height: 200px;
+        margin: 20px auto;
+    }
+    .recommendations .client .photo{
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+    }
+    .recommendations .client .comment{
+        padding: 20px;
+        margin-right: 20px;
+       
+    }
+    .recommendations .comment blockquote{
+        font-size: 16px;
+    }
+    .recommendations .comment cite{
+        font-size: 14px;
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -807,6 +840,20 @@ footer div i{
         width: 100%;
         padding: 15px 80px;
     }
+    .recommendations{
+        padding: 50px 20px;
+    }
+    .recommendations .client .photo{
+        width: 120px;
+        height:120px;
+    }
+    .recommendations .comment blockquote{
+        font-size: 14px;
+    }
+    .recommendations .comment cite{
+        font-size: 13px;
+    }
+    
 }
 
 @media (max-width: 576px) {
@@ -830,5 +877,29 @@ footer div i{
         width: 100%;
         padding: 10px;
     }
+    
+    .recommendations .client{
+        width: 100%;
+        height: auto;
+    }
+    .recommendations .client .photo{
+        margin: 20px auto;
+    }
+    .recommendations .client .comment{
+        margin: auto;
+        width: 80%;
+    }
+    .recommendations .comment .triangle{
+        display: none;
+    }
+
+    .recommendations .photo.second{
+        display:none;
+
+    }
+    .recommendations .photo.first{
+        display: inline-block;
+    }
+    
 
 }
