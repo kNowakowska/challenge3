@@ -613,9 +613,10 @@ header .btn{
 .see-more .container{
     position: relative;
     display: inline-block;
-    width: 25%;
+    max-width: 28%;
     margin: 20px;
     text-align: left;
+    font-size: 16px;
 }
 .see-more h3{
     margin: 18px 0;
@@ -666,7 +667,6 @@ header .btn{
     display: block;
     margin-top: 10px;
 }
-
 
 /* Footer */
 footer{
@@ -731,6 +731,25 @@ footer div i{
     }
     .culture .line{
         width: 15%;
+    }
+    .see-more .container{
+        font-size: 14px;
+    }
+    .see-more .container i{
+        font-size: 18px;
+    }
+    .see-more h3{
+        font-size: 16px;
+    }
+    .see-more .container:nth-of-type(2){
+        max-width: 30%;
+    }
+    .see-more .container ul li a{
+        line-height: 180%;
+    }
+    .see-more .container ul li i{
+        top: 5px;
+        left: -30px;
     }
     footer{
         height: 150px;
@@ -921,7 +940,27 @@ footer div i{
     .recommendations .comment cite{
         font-size: 13px;
     }
-    
+    .see-more{
+        flex-direction: column;
+    }
+    .see-more .container{
+        max-width: 80%;
+        margin:30px 40px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .see-more .container:nth-of-type(2){
+        max-width: 80%;
+        line-height: 200%;
+    }
+    .see-more .container i{
+        position: static;
+        margin-right: 15px;
+    }
+    .see-more h3{
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width: 576px) {
