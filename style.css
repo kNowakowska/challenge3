@@ -1,6 +1,8 @@
 /* Font used in the headlines: font-family: 'Montserrat', sans-serif; */
 /* Font used in other cases: font-family: 'Roboto Slab', serif; */
-
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     box-sizing: border-box;
@@ -89,6 +91,7 @@ nav i.fa::after{
 nav ul li:hover a, nav i:hover{
     font-weight: 700;
     color: black;
+    cursor: pointer;
 }
 
 nav ul.extended {
